@@ -1,0 +1,82 @@
+{
+  "name": "mumslunch",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@pathofdev/react-tag-input": "^1.0.7",
+    "@sentry/react": "^6.2.1",
+    "@sentry/tracing": "^6.2.1",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aos": "^2.3.4",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "chart.js": "^2.9.4",
+    "css-loader": "^5.1.0",
+    "date-fns": "^2.19.0",
+    "eslint": "^7.21.0",
+    "formik": "^2.2.6",
+    "i18next": "^19.9.1",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "moment": "^2.29.1",
+    "multiselect-react-dropdown": "^1.6.11",
+    "query-string": "^6.14.1",
+    "react": "^17.0.2",
+    "react-accessible-accordion": "^3.3.4",
+    "react-avatar": "^3.10.0",
+    "react-bootstrap": "^1.4.3",
+    "react-chartjs-2": "^2.11.1",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.3.2",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
+    "react-i18next": "^11.8.8",
+    "react-input-mask": "^2.0.4",
+    "react-js-pagination": "^3.0.3",
+    "react-json-view": "^1.21.3",
+    "react-moment": "^1.1.1",
+    "react-otp-input": "^2.3.0",
+    "react-rating": "^2.0.5",
+    "react-recaptcha": "^2.3.10",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-slick": "^0.28.0",
+    "react-stripe-checkout": "^2.6.3",
+    "react-toastify": "^7.0.3",
+    "react-top-loading-bar": "^2.0.1",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "shortid": "^2.2.15",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^1.1.0",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

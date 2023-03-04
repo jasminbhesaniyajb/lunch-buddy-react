@@ -1,0 +1,28 @@
+import { serviceMaker, methods } from "../index";
+
+export const UPDATE_RESTAURANT_PROFILE = (payload) => serviceMaker(`/restaurant-update-profile`, methods.POST, payload);
+export const GET_MANAGAE_MENU_LIST = (payload) => serviceMaker(`/menu-items?perPageRows=${payload.perPageRows}&currentPage=${payload.currentPage}&vendorId=${payload.vendorId}&menuTypeId=${payload.menuTypeId}&productName=${payload.productName}&productType=${payload.productType}&orderBy=${payload.orderBy}&sortBy=${payload.sortBy}`, methods.GET);
+export const GET_ALLERGENS_LIST = () => serviceMaker(`/allergens`, methods.GET);
+export const GET_NUTRITIONAL_LIST = () => serviceMaker(`/nutritional-terms`, methods.GET);
+export const GET_TOPPING_LIST = (payload) => serviceMaker(`/fetch-products-by-category-id?id_product_category=4&vendorId=${payload}`, methods.GET);
+export const GET_PRODUCT_CATEGORY_LIST = () => serviceMaker(`/product-categories`, methods.GET);
+export const ADD_RESTAURANT_MENU_ITEM = (payload) => serviceMaker(`/menu-items`, methods.POST, payload);
+export const GET_RESTAURANT_MENU_ITEM_BY_ID = (payload) => serviceMaker(`/menu-items/${payload}`, methods.GET);
+export const UPDATE_RESTAURANT_MENU_ITEM = (payload) => serviceMaker(`/menu-items`, methods.PUT, payload);
+export const GET_MENU_APPROVE_LIST = () => serviceMaker(`/pending-menu-approval`, methods.GET);
+export const RESTAURANT_MENU_IS_APPROVED = (payload) => serviceMaker(`/approve-menu`, methods.POST, payload);
+export const DELETE_MENU_ITEM = (payload) => serviceMaker(`/delete-menu-item`, methods.POST, payload);
+export const SUBMIT_MENU_APPROVAL = (payload) => serviceMaker(`/submit-menu-for-approval`, methods.POST, payload);
+export const GET_PAYMENT_FREQUENCY = () => serviceMaker(`/payment-frequency`, methods.GET);
+export const GET_ALL_RESTAURANT_PAST_EVENTS = (payload) => serviceMaker(`/events?currentPage=${payload.currentPage}&perPageRows=${payload.perPageRows}&vendorId=${payload.vendorId}&scheduleEndDate=${payload.scheduleEndDate}&scheduleStartDate=${payload.scheduleStartDate}&orderBy=${payload.orderBy}&sortBy=${payload.sortBy}`, methods.GET);
+export const GET_ALL_RESTAURANT_UPCOMING_EVENTS = (payload) => serviceMaker(`/events?currentPage=${payload.currentPage}&perPageRows=${payload.perPageRows}&vendorId=${payload.vendorId}&scheduleStartDate=${payload.scheduleStartDate}&orderBy=${payload.orderBy}&sortBy=${payload.sortBy}`, methods.GET);
+export const GET_RESTAURANT_PREVIEW_MENU = (payload) => serviceMaker(`/preview-menu?id_vendor=${payload.id_vendor}&eventId=${payload.eventId}`, methods.GET, payload);
+export const SUBMIT_EVENT_FOR_APPROVAL = (payload) => serviceMaker(`/accept-event`, methods.POST, payload);
+export const MENU_ITEM_IS_ACTIVE = (payload) => serviceMaker(`/activate-deactivate-menu-item`, methods.POST, payload);
+export const REJECT_EVENT = (payload) => serviceMaker(`/reject-event`, methods.POST, payload);
+export const SUBMIT_MENU_CHANGE_REQUEST = (payload) => serviceMaker(`/submit-menu-change-request`, methods.POST, payload);
+export const GET_EVENT_ORDERS = (payload) => serviceMaker(`/event-orders/${payload}`, methods.GET);
+export const GET_EVENT_ORDERS_BY_GRADE = (payload) => serviceMaker(`/event-orders-by-grade?eventId=${payload.eventId}&gradeId=${payload.gradeId}`, methods.GET, payload);
+export const GET_EVENT_ORDER_LABELS = (payload) => serviceMaker(`/event-order-labels?eventId=${payload.eventId}&gradeId=${payload.gradeId}`, methods.GET, payload);
+export const ADD_IMAGE = (payload) => serviceMaker(`/upload-image`, methods.POST, payload);
+export const DELETE_IMAGE = (payload) => serviceMaker(`/delete-image`, methods.POST, payload);

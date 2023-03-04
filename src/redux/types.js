@@ -1,0 +1,18 @@
+export const CREATE_CONTACT = "CREATE_CONTACT";
+export const GET_CONTACT = "GET_CONTACT";
+export const UPDATE_CONTACT = "UPDATE_CONTACT";
+export const DELETE_CONTACT = "DELETE_CONTACT";
+export const SELECT_CONTACT = "SELECT_CONTACT";
+export const CLEAR_CONTACT = "CLEAR_CONTACT";
+export const DELETE_SELECTED_CONTACT = "DELETE_SELECTED_CONTACT";
+
+//logininfo
+export const LOGIN_INFO = "LOGIN_INFO";
+//cartInfo
+export const ADD_TO_CART_INFO = "ADD_TO_CART_INFO";
+//homeOrderNowInfo
+export const HOME_ORDER_NOW_INFO = "HOME_ORDER_NOW_INFO";
+export const HOME_ORDER_NOW_EVENT_INFO = "HOME_ORDER_NOW_EVENT_INFO";
+//eventOrderDetailsInfo
+export const EVENT_ORDER_DETAILS_INFO = "EVENT_ORDER_DETAILS_INFO";
+export const EVENTID_GRADEID_INFO = "EVENTID_GRADEID_INFO";
